@@ -258,6 +258,7 @@ format:
 clean:
 	@$(MAKE) -C boot clean
 	@$(MAKE) -C $(MODULE_DIR) clean
+	@$(MAKE) -C kernel clean
 	@rm -rf $(BUILD_DIR) $(SYSROOT_DIR)
 
 .PHONY: distclean
